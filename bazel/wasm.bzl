@@ -24,11 +24,13 @@ load(
 )
 
 def wasm_dependencies():
-    FLAT_BUFFERS_SHA = "a83caf5910644ba1c421c002ef68e42f21c15f9f"
+    FLAT_BUFFERS_SHA = "4c954181cdfbd88d95e37d734cbd4961e54b8afc"
+    # old: "a83caf5910644ba1c421c002ef68e42f21c15f9f"
 
     http_archive(
         name = "com_github_google_flatbuffers",
-        sha256 = "b8efbc25721e76780752bad775a97c3f77a0250271e2db37fc747b20e8b0f24a",
+        sha256 = "8a0cd186e445e86d4c90f45d17ae2846c392ea4162b1b73b0e3e58718ae6dd50",
+        # old: "b8efbc25721e76780752bad775a97c3f77a0250271e2db37fc747b20e8b0f24a",
         strip_prefix = "flatbuffers-" + FLAT_BUFFERS_SHA,
         url = "https://github.com/google/flatbuffers/archive/" + FLAT_BUFFERS_SHA + ".tar.gz",
     )

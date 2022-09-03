@@ -39,13 +39,17 @@ bind(
 #
 # Note: this is needed by release builder to resolve envoy dep sha to tag.
 # Commit date: 2022-08-25
-ENVOY_SHA = "edd69583372955fdfa0b8ca3820dd7312c094e46"
+ENVOY_SHA = "5dddf9ce1fd8baeab3dc12c1c3e378f2cc679eb1"
+# old: "edd69583372955fdfa0b8ca3820dd7312c094e46"
 
-ENVOY_SHA256 = "40b557d0cb88188b58de74444e909f8c4f4bd52e0a11bcee0fcedea6bd399008"
+ENVOY_SHA256 = "41d00a7dab19fb6ef7e0664bfab4c01059bc91294c0b979464aaca34614b51d1"
+# old: "40b557d0cb88188b58de74444e909f8c4f4bd52e0a11bcee0fcedea6bd399008"
 
-ENVOY_ORG = "envoyproxy"
+ENVOY_ORG = "drouhana"
+# old: "envoyproxy"
 
 ENVOY_REPO = "envoy"
+# old: "envoy"
 
 # To override with local envoy, just pass `--override_repository=envoy=/PATH/TO/ENVOY` to Bazel or
 # persist the option in `user.bazelrc`.
